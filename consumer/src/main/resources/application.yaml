@@ -1,0 +1,13 @@
+server:
+  port: 9001
+spring:
+  profiles:
+    active: dev
+  application:
+    name: consumer
+  cloud:
+    nacos:
+      discovery:
+        namespace: 5d5c78fc-94e0-41fb-a061-b0e8fcb254f6
+        server-addr: 121.40.105.242:8848
+

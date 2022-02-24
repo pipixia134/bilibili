@@ -1,0 +1,15 @@
+spring:
+  profiles:
+    active: dev #本地开发
+  application:
+    name: consumer-server  #用户模块
+  cloud:
+    nacos:
+      config:
+        group: README_GROUP
+        namespace: 86c7e3c4-6c0d-46ad-9c53-820790d7f697
+        server-addr: 121.40.105.242:8848 #注册中心地址
+        file-extension: yaml
+
+
+
