@@ -7,6 +7,12 @@
         <module>provider</module>
         <module>consumer</module>
         <module>gateway</module>
+        <module>shop</module>
+        <module>shop-common</module>
+        <module>shop-finance</module>
+        <module>shop-goods</module>
+        <module>shop-stock</module>
+        <module>shop-user</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

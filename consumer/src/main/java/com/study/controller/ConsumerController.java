@@ -5,7 +5,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -24,19 +23,18 @@ public class ConsumerController {
     private String name;
 
 
-
     @GetMapping("/testApplication")
-    public String testApplication(){
+    public String testApplication() {
         return name;
     }
 
     @GetMapping("/hello")
-    public String consumer(){
+    public String consumer() {
         return "消费者";
     }
 
     @GetMapping("/getProviderInfo")
-    public String getProviderInfo(){
+    public String getProviderInfo() {
         return "消费者调用生产者 " + consumerFeign.hello();
     }
 }
